@@ -4,19 +4,27 @@ from langchain_core.output_parsers import StrOutputParser
 llm = GoogleGenerativeAI(model="models/gemini-1.5-flash-latest")
 
 TEMPLATE = """
-Artificial Intelligence (AI) has surpassed dermatologists in skin cancer detection, but dermatology still lags behind radiology in its broader adoption. Building and using AI applications are becoming increasingly accessible. However, complex use cases may still require specialized expertise for design and deployment. AI has many applications in dermatology ranging from fundamental research, diagnostics, therapeutics, and cosmetic dermatology. The lack of standardization of images and privacy concerns are the foremost challenges stifling AI adoption. Dermatologists have a significant role to play in standardized data collection, curating data for machine learning, clinically validating AI solutions, and ultimately adopting this paradigm shift that is changing the way we practice.
-\n\n
+You are an AI agent that generates product descriptions.
 
-Answer the following question from the text above.\n\nQ: {question}?\nA::
+Generate product descriptions for the last product as in the examples below:
 
+Product: Wireless Earbuds
 
+Description: Immerse yourself in crystal-clear audio with our sleek wireless earbuds. Featuring noise-cancellation technology and a comfortable fit, these earbuds are perfect for music lovers on the go.​
 
+Product: Smart Watch
+
+Description: Stay connected and track your fitness with our advanced smart watch. With heart rate monitoring, GPS, and a vibrant touch screen, it's your perfect companion for an active lifestyle.​
+
+Product: {question}
+
+Description::
 """
 
 PROMPT = PromptTemplate.from_template(TEMPLATE)
 
 _input = {
-    "question": "What are the foremost challenges stifling AI adoption in dermatology"
+    "question": "Ergonomic Office Chair"
 }
 
 chain = PROMPT | llm | StrOutputParser()
