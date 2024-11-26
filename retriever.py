@@ -26,4 +26,6 @@ chain = (
     | StrOutputParser()
 )
 
-chain.invoke("What is the latest treatment for ataxia telangiectasia?")
+answer = chain.invoke("How do you manage ataxia telangiectasia?")
+
+print(answer)
