@@ -27,5 +27,5 @@ _input = {
 
 chain = PROMPT | llm | StrOutputParser()
 
-response = chain.invoke(_input).split("::")[-1].strip()
+response = chain.invoke(_input)
 print(response)
