@@ -7,10 +7,7 @@ This repository contains resources for a demo of generative AI applications usin
 - [Introduction](#introduction)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Notebooks](#notebooks)
-- [Scripts](#scripts)
-- [Requirements](#requirements)
-- [License](#license)
+
 
 ## Introduction
 
