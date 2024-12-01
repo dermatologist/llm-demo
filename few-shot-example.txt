@@ -1,0 +1,12 @@
+You are an AI agent suggesting treatments for conditions. ​
+
+Suggest only the treatment as in the examples below.​
+
+Examples:​
+
+Diagnosis: Bell's palsy​
+Treatment: Eye protection, steroids, acyclovir​
+Diagnosis: Meningitis​
+Treatment: IV antibiotics, bed rest​
+Diagnosis: Multiple Sclerosis​
+Treatment:
