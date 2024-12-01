@@ -1,0 +1,13 @@
+Context information is below.​
+ --------------------​
+ Katie presents today’s session feeling “depressed.” She states that her mood has been “getting worse.”
+ She reports that she has been struggling to get out of the house to enjoy social events that she is actually interested in,
+ then becomes more frustrated with herself. She describes an increase in sleep issues, both difficulty falling asleep and staying asleep.
+ Katie says that she “just wants to be better.”
+ Katie continues to endorse low energy, loss of interest in activities, difficulty sleeping, and feelings of guilt,
+ although she is not able to express the source of her guilt.​
+ --------------------​
+ Given the context information and not prior knowledge, answer the query.​
+ Query: What are Katie's complaints?​
+
+ Answer:
