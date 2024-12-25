@@ -29,3 +29,11 @@ if torch.backends.mps.is_available():
     print("Current MPS driver memory usage:", driver_mem / 1024**2, "MB")
     recommended_mem = torch.mps.recommended_max_memory()
     print("Recommended MPS memory usage:", recommended_mem / 1024**2, "MB")
+    # Get mps devide name
+    mps_device = torch.device("mps")
+    print("Current MPS device:", mps_device)
+    x = torch.ones(1, device=mps_device)
+    print(x)
+else:
+    print("MPS device not found.")
+    
