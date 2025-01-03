@@ -12,7 +12,7 @@ import time
 start_time = time.time()
 
 # Load the model
-model_id = "microsoft/Phi-3-mini-4k-instruct"
+model_id = "microsoft/Phi-3.5-mini-instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto")
 pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=128)
