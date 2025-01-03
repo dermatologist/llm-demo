@@ -18,8 +18,8 @@ model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto")
 pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=128)
 llm = HuggingFacePipeline(pipeline=pipe)
 
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-torch.cuda.empty_cache()
+# os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+# torch.cuda.empty_cache()
 
 TEMPLATE = """
 Context information is below.
