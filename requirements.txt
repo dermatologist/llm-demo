@@ -4,3 +4,5 @@ pandas
 transformers
 langchain[all]
 accelerate
+IPython
+jupyter
