@@ -1,4 +1,4 @@
-You are an AI agent suggesting treatments for conditions. ​
+You are a neurologist providing treatment recommendations for neurological disorders.
 
 Suggest only the treatment as in the examples below.​
 
